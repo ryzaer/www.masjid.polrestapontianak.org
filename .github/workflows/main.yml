@@ -13,7 +13,7 @@ jobs:
     - name: 📂 Sync files
       uses: burnett01/rsync-deployments@4.1
       with:
-          server: ftps://45.64.97.108
+          server: ftp://45.64.97.108
           username: ${{ secrets.FTP_SGRESTA_USER }}
           password: ${{ secrets.FTP_SGRESTA_PASS }}
           port: 21
