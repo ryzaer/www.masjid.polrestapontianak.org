@@ -1,0 +1,19 @@
+on:
+  push:
+    branches: [ main ]
+name: 🚀 Deploy Web Masjid Resptk
+jobs:
+  web-deploy:
+    name: 🎉 Auto Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2.3.2
+
+    - name: 📂 Sync files
+      uses: burnett01/rsync-deployments@4.1
+      with:
+          server: polrestapontianak.org
+          username: ${{ secrets.FTP_SGRESTA_USER }}
+          password: ${{ secrets.FTP_SGRESTA_PASS }}
+          port: 21
