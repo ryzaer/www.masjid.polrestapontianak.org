@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-md-8 col-lg-10">
+        <div class="form-group">
+            <label id="autoDisposisi" data-id="" data-txt="" class="small font-weight-bold">Disposisikan Kepada</label>
+            <select id="basicDisposisi" class="form-control" 
+                    name="kepada"
+                    placeholder="Disposisikan Kepada" 
+                    data-url="./api/jabatan" autocomplete="off">
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="form-group">
+                    <label class="small font-weight-bold">Sifat Disposisi</label>
+                    <select class="form-control" name="sifat">
+                    <option value="1">Biasa</option>
+                    <option value="2">Penting</option>
+                    <option value="3">Segera</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="form-group">
+                    <label class="small font-weight-bold">Batas Waktu</label>
+                    <input class="customDatePicker form-control" type="text" placeholder="00/00/0000" name="batas_waktu">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="small font-weight-bold">Isi Disposisi</label>
+            <textarea class="form-control" rows="3" name="isi_disposisi"></textarea>
+        </div>
+    </div>                                       
+</div> 

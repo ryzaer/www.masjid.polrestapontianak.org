@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Twitter meta-->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="{{@TWITTER.site}}">
+    <meta property="twitter:creator" content="{{@TWITTER.creator}}">
+    <!-- Open Graph Meta-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{@APP.name}}">
+    <meta property="og:title" content="{{@APP.short_name}}">
+    <!-- <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
+    <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png"> -->
+    <meta property="og:description" content="{{@APP.description}}">
+    <meta name="description" content="{{@APP.description}}">
+    <title>{{ @page_title }}</title>
+    <link rel="shortcut icon" href="assets/img/resta-128.webp" type="image/webp">
+    <link rel="manifest" href="manifest.json">
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="{{@URLBase.@index_css}}">
+  </head>
+  <body>
+    <main class="container">
+      <div class="page-error">
+        <h1><i class="fa fa-exclamation-circle"></i> Error {{@ERROR.code}}: {{@ERROR.status}}</h1>
+        <p>{{@ERROR.text}}</p> 
+        <check if="{{ @SESSION.user && @SESSION.level }}">
+          <pre class="directory-structure">
+{{@ERROR.trace}}
+          </pre>         
+        </check>
+        <p><a class="btn btn-primary" href="javascript:window.history.back();">Go Back</a></p>
+      </div>
+    </main>
+    <!-- Essential javascripts for application to work-->
+    <script src="{{@URLBase.@index_js}}"></script>
+  </body>
+</html>

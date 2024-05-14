@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{@APP.lang}}">
+  <include href="{{ 'app/templates/components/metadata.htm' }}">
+  <body hidden>
+    <!-- Essential javascripts for application to work-->
+    <main class="full">
+      <include href="{{ 'app/templates/components/index-header.htm' }}">
+      <include href="{{ 'app/templates/'.@dirBase.'.htm' }}">      
+      <!-- include component MODAL CROPPER JS -->      
+      <!-- <includse href="{{ 'app/templates/components/modal-black.htm' }}"> -->
+      <include href="{{ 'app/templates/components/index-footer.htm' }}">
+    </main>
+    <script src="{{@srcBase.@index_js}}"></script>
+  </body>
+</html>

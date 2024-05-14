@@ -1,0 +1,72 @@
+.sortable { 
+    list-style-type: none;
+    margin: .5rem 0; 
+    padding: 0; 
+    width: 100%;
+}
+.sortable li i.handle {
+    position: absolute;
+    cursor: grab;
+    padding-top: .25rem;
+    margin-left: -1.35rem;
+    color: var(--gray-dark);
+} 
+
+.sortable li { 
+    margin: 0 0 .2rem 0; 
+    padding: .25rem 1.75rem; 
+    border-radius: .2rem;
+    font-size: 0.9rem;
+    background-color: var(--blue-pale);
+    border: 1.5px solid var(--gray-dark);
+    color: var(--gray-dark);
+}
+.sortable li input::-moz-selection{
+    color:var(--gray-dark);
+    background:var(--corn-silk);
+}
+.sortable li input::selection{
+    color:var(--gray-dark);
+    background:var(--corn-silk);
+}
+.sortable li input,
+.sortable li span
+{ 
+    width: 100%;
+    margin-right: .35rem;
+}
+
+.sortable li input[type=text] {
+    background: transparent;
+    border: none;
+    padding: 0 .3rem;
+    color: var(--gray-dark);
+}
+.sortable li input[type=text]:focus
+{
+    border: none;
+    border-radius: .2rem;
+    background: var(--light);
+    outline: none;
+}
+.sortable li .sign-close {
+    position: absolute;
+    cursor: pointer;
+    right: 1.75rem;
+    padding-top: .25rem;
+} 
+/* primary color */
+
+.sortable.sortable-primary li { 
+    background-color: var(--color-c);
+    border: 1.5px solid var(--color-a);
+    color: var(--light);
+}
+.sortable.sortable-primary li input[type="text"],
+.sortable.sortable-primary li i.handle {
+    color: var(--light);
+}
+.sortable.sortable-primary li input[type="text"]:focus {
+    background: var(--color-b);
+    color: var(--light);
+}

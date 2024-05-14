@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/*!
+ * Vali Admin
+ * Author: Pratik Borsadiya
+ * ================================*/
+@import url(//fonts.googleapis.com/css?family=Niconne|Lato:300,400,400i,700|Poppins:300,400,500,700|Roboto:300,400,500,700|Roboto+Mono:300,700|Roboto+Slab:400,700|Material+Icons);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/* import cropperJS style css */
+@import url(//unpkg.com/cropperjs/dist/cropper.css);

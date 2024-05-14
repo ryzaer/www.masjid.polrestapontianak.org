@@ -1,0 +1,32 @@
+<aside class="app-sidebar">
+  <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="assets/img/sium.webp" alt="User Image">
+    <div>
+      <p class="app-sidebar__user-name">{{@SESSION.user}}</p>
+      <p class="app-sidebar__user-designation">{{@SESSION.level}}</p>
+    </div>
+  </div>
+  <ul class="app-menu">
+    <li><a class="app-menu__item" href="./berandaeoffice"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Beranda</span></a></li>
+    
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-envelope"></i><span class="app-menu__label">Transaksi Surat</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li><a class="treeview-item" href="./transaksi_suratmasuk"><i class="icon fa fa-circle-o"></i> Surat Masuk</a></li>
+        <li><a class="treeview-item" href="./transaksi_suratkeluar" rel="noopener"><i class="icon fa fa-circle-o"></i> Surat Keluar</a></li>
+      </ul>
+    </li>
+
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-book"></i><span class="app-menu__label">Buku Agenda</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li><a class="treeview-item" href="./bukuagenda_suratmasuk"><i class="icon fa fa-circle-o"></i> Surat Masuk</a></li>
+        <li><a class="treeview-item" href="./bukuagenda_suratkeluar" rel="noopener"><i class="icon fa fa-circle-o"></i> Surat Keluar</a></li>
+      </ul>
+    </li>
+
+    <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Galeri File</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+        <li><a class="treeview-item" href="./galerifile_suratmasuk"><i class="icon fa fa-circle-o"></i> Surat Masuk</a></li>
+        <li><a class="treeview-item" href="./galerifile_suratkeluar" rel="noopener"><i class="icon fa fa-circle-o"></i> Surat Keluar</a></li>
+      </ul>
+    </li>
+  </ul>
+</aside>

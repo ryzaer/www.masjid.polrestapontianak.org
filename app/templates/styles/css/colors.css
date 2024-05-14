@@ -1,0 +1,96 @@
+:root {
+    /* FONT LIST */
+    --font-family-lato: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-family-poppins:"Poppins","Segoe UI";
+    --font-family-niconne:"Niconne";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /* COLOR LISTS */
+    --blue: #007bff;
+    --blue-charcoal: #212529;
+    --blue-pale: #dee2e6;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545 ;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --green-pine:#007d71;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --cyan-strong: #1ab6cf;
+    --cyan-soft: #4dd3e9;
+    --cyan-050: rgba(23, 162, 184,0.5);
+    --cyan-dark: #009688;
+    --tropical-forest:#007065;
+    --mosque: #00635a;
+    --cyprus:#004a43;
+    --niagara-050 :rgba(38, 166, 154, 0.5);
+    --corn-silk:#fcf8e3;
+    --light: #f8f9fa;
+    --white: #ffffff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --dark: #262626;
+    /* RGB BLACK LISTS */
+    --a-000 : rgba(0, 0, 0, 0);
+    --a-003 : rgba(0, 0, 0, 0.03);
+    --a-0047 : rgba(0, 0, 0, 0.0047);
+    --a-005 : rgba(0, 0, 0, 0.05);
+    --a-0075 : rgba(0, 0, 0, 0.075);
+    --a-010 : rgba(0, 0, 0, 0.1);
+    --a-012 : rgba(0, 0, 0, 0.12);
+    --a-0125 : rgba(0, 0, 0, 0.125);
+    --a-014 : rgba(0, 0, 0, 0.14);
+    --a-015 : rgba(0, 0, 0, 0.15);
+    --a-016 : rgba(0, 0, 0, 0.16);
+    --a-0175 : rgba(0, 0, 0, 0.175);
+    --a-019 : rgba(0, 0, 0, 0.19);
+    --a-020 : rgba(0, 0, 0, 0.2);
+    --a-023 : rgba(0, 0, 0, 0.23);
+    --a-025 : rgba(0, 0, 0, 0.25);
+    --a-030 : rgba(0, 0, 0, 0.3);
+    --a-040 : rgba(0, 0, 0, 0.4);
+    --a-050 : rgba(0, 0, 0, 0.5);
+    --a-070 : rgba(0, 0, 0, 0.7);
+    --a-080 : rgba(0, 0, 0, 0.8);
+    --a-090 : rgba(0, 0, 0, 0.9);
+
+    /* THEME COLOR DEFAULT (CYPRUS) */
+    --color-050 : var(--niagara-050);
+    --color-a:var(--cyprus);
+    --color-b:var(--mosque);
+    --color-c:var(--tropical-forest);
+
+    /* THEME FONT DEFAULT (LATO) */
+    --font-default : var(--font-family-poppins);
+
+    /* THEME CUSTOM COLOR (BROWN)  */
+    /* --color-050 : rgba(42, 27, 5, 0.5);
+    --color-a:#352206;
+    --color-b:#412b0a;
+    --color-c:#6d4812; */
+
+     /* THEME CUSTOM COLOR (BROWN)  */
+    /* --color-050 : rgba(16, 15, 15, 0.5);
+    --color-a:#050505;
+    --color-b:#2c2b2a;
+    --color-c:#5d5d5d; */
+
+    /* PRIMARY ELEMENTS */
+    --primary: var(--color-c);
+    --primary-a: var(--color-b);
+    --primary-b: var(--color-a);
+    --primary-050: var(--color-050);
+
+    --secondary: var(--gray);
+    --success: var(--green);
+    --info: var(--cyan);
+    --warning: var(--yellow);
+    --danger: var(--red);
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;    
+  }

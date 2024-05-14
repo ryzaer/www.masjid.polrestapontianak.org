@@ -1,0 +1,79 @@
+/* Hero Image example
+<div class="hero hero-polres"> 
+    <div class="container">     
+        <div class="hero-content"> 
+            <div class="row">
+            <div class="col-md-3 text-center p-3 w-50"> 
+                <a href="./link">
+                    <h5><i class="material-icons">description</i><br>Title Lorem</h5> 
+                    <small>Lorem ipsum</small> 
+                </a>
+            </div>  
+            <div class="col-md-3 text-center p-3 w-50">
+                <a href="./link2r">
+                <h5><i class="material-icons">description</i><br>Title Lorem</h5> 
+                <small>Click for lorem</small> 
+                </a> 
+            </div>
+            </div>
+        </div> 
+    </div>
+</div> 
+*/
+.hero-polres{
+    min-height: 35vh;
+    background: var(--white) url(../../assets/img/renmasjid-hero.webp) center center no-repeat;
+    background-size: cover;
+    /*addmore here*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero:before {
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}
+.hero h1,
+.hero h6 {    
+    color: var(--black);
+    /* text-shadow: 1px 1px 2px var(--gray), 0 0 25px var(--dark), 0 0 7px var(--gray-dark);    */
+    text-shadow: 1px 1px 2px var(--gray), 0 0 25px var(--light), 0 0 7px var(--white); 
+}
+.hero h1 {
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
+.hero h6 {
+    font-size: 1.5rem;
+}
+.hero-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    /*add flex here*/
+    flex: 0 0 120px;
+    line-height: 1rem;
+}
+.hero-content a h5 {
+    font-size: 1.125rem;
+    color: #ff9800 !important;
+}
+.hero-content a:hover h5 {
+    color: #fdbc43 !important;
+}
+
+.hero-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-flex {
+    flex: 0 0 120px;
+}
