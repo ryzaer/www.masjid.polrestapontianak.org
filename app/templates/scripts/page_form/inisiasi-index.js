@@ -141,6 +141,18 @@ $('body').attr('hidden',false);
             if($('.footer').hasClass('relative'))
                 $('.footer').removeClass('relative').addClass('fixed');
         }
+        /* untuk banner */
+        if($(window).width() > 960){
+            if(!$('#banner-1').is(':visible'))
+                $('#banner-1').show();
+            if($('#banner-1').is(':visible'))
+                $('#banner-2').hide()
+        }else{
+            if(!$('#banner-2').is(':visible'))
+                $('#banner-2').show();
+            if($('#banner-1').is(':visible'))
+                $('#banner-1').hide()
+        }
     }
     propagationFooter();
     $(window).on('resize click scroll', propagationFooter);
