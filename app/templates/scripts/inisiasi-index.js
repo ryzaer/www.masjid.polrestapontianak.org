@@ -72,8 +72,11 @@ function getCropperJS(callBack) {
        console.log( exception );
    });*/
 }
-function openModal() {
-    $('#modal-base').modal('show');
+function openPaneTab(idTab) {
+    $('a[href="'+idTab+'"]').trigger('click');
+    $('html, body').animate({
+        scrollTop: $(idTab).offset().top
+    }, 1000);
 }
 function openNotify( params ){
     var params = params ? params : {

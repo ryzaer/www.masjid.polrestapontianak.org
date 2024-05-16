@@ -80,19 +80,33 @@
                     <loop from="{{ @i=0 }}" to="{{ @i < count(range(1,4)) }}" step="{{ @i++ }}">
                         <img src="./assets/img/img-{{@i+1}}.webp" class="w-100" alt="home"/>
                     </loop>
+                    <div class="w-100 d-flex justify-content-center">
+                        <button onclick="openPaneTab('#anggaran')" class="btn btn-sm btn-outline-secondary m-1">Anggaran<i class="fa fa-arrow-right ml-2"></i></button>
+                    </div>
                   </div>
                   <div id="anggaran" class="tab-pane fade">
                     <loop from="{{ @i=0 }}" to="{{ @i < count(range(6,12)) }}" step="{{ @i++ }}">
                         <img src="./assets/img/img-{{@i+6}}.webp" class="w-100" alt="home"/>
                     </loop>
+                    <div class="w-100 d-flex justify-content-center">
+                        <button onclick="openPaneTab('#proposal')" class="btn btn-sm btn-outline-secondary m-1"><i class="fa fa-arrow-left mr-2"></i>Proposal</i></button>
+                        <button onclick="openPaneTab('#interior')" class="btn btn-sm btn-outline-secondary m-1">Interior<i class="fa fa-arrow-right ml-2"></i></button>
+                    </div>
                   </div>
                   <div id="interior" class="tab-pane fade">
                     <loop from="{{ @i=0 }}" to="{{ @i < count(range(15,28)) }}" step="{{ @i++ }}">
                         <img src="./assets/img/img-{{@i+15}}.webp" class="w-100" alt="home"/>
                     </loop>
+                    <div class="w-100 d-flex justify-content-center">
+                        <button onclick="openPaneTab('#anggaran')" class="btn btn-sm btn-outline-secondary m-1"><i class="fa fa-arrow-left mr-2"></i>Anggaran</i></button>
+                        <button onclick="openPaneTab('#download')" class="btn btn-sm btn-outline-secondary m-1">Info Sedekah<i class="fa fa-arrow-right ml-2"></i></button>
+                    </div>
                   </div>
                   <div id="download" class="tab-pane fade">
-                    <img src="./assets/img/img-13.webp" class="w-100" alt="home"/>
+                    <img src="./assets/img/img-13.webp" class="w-100 mb-5" alt="home"/>
+                    <div class="w-100 d-flex justify-content-center">
+                        <button onclick="openPaneTab('#interior')" class="btn btn-sm btn-outline-secondary m-1"><i class="fa fa-arrow-left mr-2"></i>Interior</i></button>
+                    </div>
                   </div>
                 </div>
               </div>
