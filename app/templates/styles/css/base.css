@@ -16820,12 +16820,24 @@ be a descendant of the grid when it is being dragged.
 }
 
 /* nav-tabs */
+.tab-content-bordered {
+  border: 1px solid transparent;
+  border-color: #e9ecef #e9ecef var(--blue-pale);
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  margin-top: -0.05rem;
+  margin-bottom: 1.5rem;
+  padding: .2rem;
+}
+
 .nav-link span {
   display: none;
 }
 .nav-link.active span {
   display: inline-block;
 }
+
+
 
 /* content sigle page */
 .app-single {
