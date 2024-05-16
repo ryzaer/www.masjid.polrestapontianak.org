@@ -75,7 +75,7 @@ function getCropperJS(callBack) {
 function openPaneTab(idTab) {
     $('a[href="'+idTab+'"]').trigger('click');
     $('html, body').animate({
-        scrollTop: $(idTab).offset().top
+        scrollTop: $('a[href="'+idTab+'"]').offset().top
     }, 1000);
 }
 function openNotify( params ){
