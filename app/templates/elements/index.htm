@@ -77,8 +77,8 @@
                 </ul>
                 <div class="tab-content tab-content-bordered">
                   <div id="proposal" class="tab-pane fade active show">
-                    <loop from="{{ @i=0 }}" to="{{ @i < count(range(1,4)) }}" step="{{ @i++ }}">
-                        <img src="./assets/img/img-{{@i+1}}.webp" class="w-100" alt="home"/>
+                    <loop from="{{ @i=0 }}" to="{{ @i < count(range(0,4)) }}" step="{{ @i++ }}">
+                        <img src="./assets/img/img-{{@i}}.webp" class="w-100" alt="home"/>
                     </loop>
                     <div class="w-100 d-flex justify-content-center">
                         <button onclick="openPaneTab('#anggaran')" class="btn btn-sm btn-outline-secondary m-1">Anggaran<i class="fa fa-arrow-right ml-2"></i></button>
